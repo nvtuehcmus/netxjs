@@ -1,10 +1,11 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>Frist time with nextjs</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -16,6 +17,13 @@ export default function Home() {
         <p className="description">
           Get started by editing <code>pages/index.js</code>
         </p>
+        <Link href="/pages/nvtue" as="/nvtue">
+          <a>
+        <p className="description">
+         Go to examble page <code>nvtue</code>
+        </p>
+        </a>
+        </Link>
 
         <div className="grid">
           <a href="https://nextjs.org/docs" className="card">
